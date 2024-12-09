@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <nav>
+    <button data-target="section1">О себе</button>
+    <button data-target="section2">Музыка и видео</button>
+    <button data-target="section3">Настройки</button>
+    <label class="switch">
+      <input type="checkbox" id="theme-checkbox">
+      <span class="slider round"></span>
+    </label>
+  </nav>
+  <div class="content">
+    <header>Лабораторная работа 4</header>
+    <main>
+      <section id="section1">
+        <h2 class="section__title">О себе.</h2>
+        <div class="section1__content">
+          <img src="./icons/IBS_Dunice_Point_188_Fisenko.jpg" alt="AleksandrFisenko">
+          <div class="section1_text">
+            <h4>Фисенко Александр Игоревич</h4>
+            <p>
+              Меня зовут Фисенко Александр Игоревич. Являюсь студентом 4 курса ИКТИБ. Я инженер-программист в компании
+              IBS Dunice, занимаюсь разработкой на уровне Junior+ Fullstack. Основные технологии, с которыми работаю:
+              Node.js (включая Nest.js и Sequelize) на серверной части, React и Redux — на клиентской. В настоящее время
+              я работаю на TM проекте НЛМК фронтенд разработчиком.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="section2" hidden>
+        <h2 class="section__title">Музыка и видео.</h2>
+        <div class="section2__content">
+          <div class="section2__video-playback">
+            <h2>Воспроизведение Видео</h2>
+            <p>Информация о воспроизведении видео через браузер.</p>
+            <video controls>
+              <source src="./mp/video.mp4" type="video/mp4">
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+          </div>
+
+          <div class="section2__audio-playback">
+            <h2>Воспроизведение Аудио</h2>
+            <p>Информация о воспроизведении аудио через браузер.</p>
+            <audio controls>
+              <source src="./mp/audio.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает воспроизведение аудио.
+            </audio>
+          </div>
+        </div>
+      </section>
+      <section id="section3" hidden>
+        <h2 class="section__title">Настройки</h2>
+        <div class="section3__content">
+          <div class="font-controls">
+            <h3>Настройка шрифта</h3>
+            <label>
+              Размер шрифта:
+              <input type="number" id="font-size-input" value="16" min="10" max="36"> px
+            </label>
+            <label>
+              Цвет текста:
+              <input type="color" id="font-color-input" value="#000000">
+            </label>
+            <label>
+              Цвет фона:
+              <input type="color" id="bg-color-input" value="#ffffff">
+            </label>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Лабораторная работа 4 |
+        <a href="https://github.com/AleksandrFisenko" target="_blank">
+          <img src="./icons/github-icon.svg" alt="GitHub" width="20"> GitHub
+        </a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
